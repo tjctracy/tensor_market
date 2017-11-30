@@ -25,9 +25,9 @@ GitHub clone of c9 IDE directories
 
 # For more information:
 
-Tyler Tracy
+Tyler Tracy,
 Chief Blockchain Architect
-@ tensor.market
+@ tensor.market | 
 tjctracy@gmail.com
 
 
