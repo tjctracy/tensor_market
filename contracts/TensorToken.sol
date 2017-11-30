@@ -1,4 +1,4 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.18;
 
 
 import './BasicToken.sol';
@@ -7,21 +7,22 @@ import './ERC223.sol';
 
 
 /**
- * @title Standard ERC20 token
- *
- * @dev Implementation of the basic standard token.
+ * @title Ethereum implementation of the TNSR crypto-asset
+ * @dev TNSR token is ERC20- and ERC223-compliant, see:
  * @dev https://github.com/ethereum/EIPs/issues/20
+ * @dev https://github.com/ethereum/EIPs/issues/223
+ * @dev props  for code due to First Blood, Kin, Aragon
  */
  
 contract StandardToken is ERC20, ERC223, BasicToken {
 
   mapping (address => mapping (address => uint256)) internal allowed;
-  string public constant name = "Tensor"
-  string public constant symbol = "TNSR"
+  string public constant name = "Tensor";
+  string public constant symbol = "TNSR";
 
 
   /**
-   * @dev Transfer tokens from one address to another
+   * @dev Transfer TNSR from one address to another
    * @param _from address The address which you want to send tokens from
    * @param _to address The address which you want to transfer to
    * @param _value uint256 the amount of tokens to be transferred
