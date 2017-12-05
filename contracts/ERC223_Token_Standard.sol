@@ -1,36 +1,14 @@
-pragma solidity ^0.4.9;
+pragma solidity 0.4.18;
 
 import "./Receiver_Interface.sol";
 import "./ERC223_Interface.sol";
+import "./SafeMath.sol
 
  /**
- * ERC23 token by Dexaran
+ * ERC223 token by Dexaran
  *
  * https://github.com/Dexaran/ERC23-tokens
  */
- 
- 
- /* https://github.com/LykkeCity/EthereumApiDotNetCore/blob/master/src/ContractBuilder/contracts/token/SafeMath.sol */
-contract SafeMath {
-    uint256 constant public MAX_UINT256 =
-    0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
-
-    function safeAdd(uint256 x, uint256 y) constant internal returns (uint256 z) {
-        if (x > MAX_UINT256 - y) throw;
-        return x + y;
-    }
-
-    function safeSub(uint256 x, uint256 y) constant internal returns (uint256 z) {
-        if (x < y) throw;
-        return x - y;
-    }
-
-    function safeMul(uint256 x, uint256 y) constant internal returns (uint256 z) {
-        if (y == 0) return 0;
-        if (x > MAX_UINT256 / y) throw;
-        return x * y;
-    }
-}
  
 contract ERC223Token is ERC223, SafeMath {
 
