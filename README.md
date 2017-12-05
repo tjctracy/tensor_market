@@ -16,11 +16,11 @@ tjctracy@gmail.com
 
 # Test environment:
 
-contracts have been tested on ethereumjs-testrpc using
+Contracts have been tested on ethereumjs-testrpc using
 Truffle Ganache CLI. Rinkeby testnet deployment is the
 next phase.
     
-for fast formal analysis, https://remix.ethereum.org/ is
+For fast formal analysis, https://remix.ethereum.org/ is
 a helpful environment.
     
 # Auditing tools:
