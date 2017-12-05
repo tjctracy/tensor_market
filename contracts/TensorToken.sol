@@ -11,7 +11,7 @@ import './ERC223.sol';
  * @dev TNSR token is ERC20- and ERC223-compliant, see:
  * @dev https://github.com/ethereum/EIPs/issues/20
  * @dev https://github.com/ethereum/EIPs/issues/223
- * @dev props  for code due to First Blood, Kin, Aragon
+ * @dev props for code due to First Blood, Kin, Aragon
  */
  
 contract StandardToken is ERC20, ERC223, BasicToken {
