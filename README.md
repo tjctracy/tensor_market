@@ -4,7 +4,7 @@ GitHub clone of c9 IDE directories
 
 # Overview:
 
-tnsr_infrastructure :
+tnsr_infrastructure:
 contains the standard token infrastructure,
 safe math lib, ERC20 interface, etc. for a
 generic dApp token on Ethereum
